@@ -2,16 +2,25 @@ import java.util.*;
 
 public class Die{
 
-	private int Sides;
-	private int Value;
+	private int sides;
+	private int value;
 
 	public Die(){
-		Sides = 6;
-		Value = (int)(Math.random()*Sides)+1;
+		value = 6;
+		value = (int)(Math.random()*sides)+1;
 	}
-	public Die(int Sides){
-		this.Sides = Sides;
-		Value = (int)(Math.random()*Sides)+1;
+	public Die(int sides){
+		this.sides = sides;
+		value = (int)(Math.random()*sides)+1;
+	}
+	public int getValue(){
+		return value;
+	}
+	public void roll(){
+		value = (int)(Math.random()*sides)+1;
+	}
+	public String toString(){
+		return "Number of sides: "+sides+", Value: "+getValue();
 	}
 
 }
