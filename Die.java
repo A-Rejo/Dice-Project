@@ -1,5 +1,3 @@
-import java.util.*;
-
 public class Die{
 
 	private int sides;
