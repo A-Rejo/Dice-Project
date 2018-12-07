@@ -7,7 +7,7 @@ public class Die{
 		sides = 6;
 		value = (int)(Math.random()*(sides-1))+1;
 	}
-	public Die(int sides){
+	public Die(int sides, int value){
 		this.sides = sides;
 		this.value = value;
 	}

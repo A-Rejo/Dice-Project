@@ -1,8 +1,10 @@
 import java.util.*;
 public class DiceHolder{
-	private ArrayList<Die> dice;
+
+		ArrayList<Die> dice = new ArrayList<Die>();
+
 		public DiceHolder(){
-		dice = new ArrayList<Die>();
+		this.dice = dice;
 	}
 	public void Shake(){
 		Die temp;
@@ -14,9 +16,9 @@ public class DiceHolder{
 		dice.set(index, temp);
 	}
 }
-	public int addDie(Die x){
+	public int addDie(Die die){
 		if(dice.size()<6){
-			dice.add(x);
+			dice.add(die);
 			return 1;
 		}
 		return -1;
