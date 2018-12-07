@@ -23,9 +23,6 @@ public class DiceHolder{
 	}
 
 	public String toString(){
-		if (dice.size() == 0){
-			System.out.println("There are no dice in this holder, try adding a die.");
-	}
 		String st = ("");
 			for(int i = 0; i < dice.size(); i++){
 			st += dice.get(i)+"\n";
