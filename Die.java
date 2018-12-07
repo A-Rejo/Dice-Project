@@ -4,18 +4,21 @@ public class Die{
 	private int value;
 
 	public Die(){
-		value = 6;
-		value = (int)(Math.random()*sides)+1;
+		sides = 6;
+		value = (int)(Math.random()*(sides-1))+1;
 	}
 	public Die(int sides){
 		this.sides = sides;
-		value = (int)(Math.random()*sides)+1;
+		this.value = value;
 	}
 	public int getValue(){
 		return value;
 	}
+	public int getSides(){
+		return sides;
+	}
 	public void roll(){
-		value = (int)(Math.random()*sides)+1;
+		value = (int)(Math.random()*(sides-1))+1;
 	}
 	public String toString(){
 		return "Number of sides: "+sides+", Value: "+getValue();
